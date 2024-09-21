@@ -1,6 +1,7 @@
 import './Navbar.css';
 import {Link} from 'react-router-dom';
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({active}) => {
  
   return (
