@@ -23,4 +23,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--bg-color);
+  border-radius: 10px;
+  border: 2px solid var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: var(--bg-color);
 }

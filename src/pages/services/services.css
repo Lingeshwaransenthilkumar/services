@@ -1,11 +1,17 @@
 section{
     margin-top: 100px;
     display: flex;
-    margin-left: 150px;
+    margin-left: 50px;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
     overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+section::-webkit-scrollbar{
+    display: none;
+
 }
 .modal-overlay {
     position: fixed;
@@ -135,4 +141,15 @@ input{
     color: var(--bg-color);
     cursor: pointer;
 
+}
+
+@media screen and (max-width: 768px){
+    section{
+        margin-left: 0;
+        justify-content: center;
+    }
+    .card{
+        margin: 10px;
+    }
+    
 }
